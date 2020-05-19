@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.grpc.demo.api";
+package proto;
+
+service SearchService {
+  rpc Search(SearchRequest) returns (SearchResponse) {}
+}
+
+message SearchRequest {
+  string request = 1;
+}
+
+message SearchResponse {
+  string response = 1;
+}
